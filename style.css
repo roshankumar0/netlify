@@ -93,11 +93,12 @@ header {
   left: 50%;
   top: 9rem;
   transform: translateX(-50%);
+  box-shadow: 0 0 1px #fff;
 }
 .card__container {
   width: 60%;
   border-radius: 4px;
-  margin: 0 auto;
+  margin: 10rem auto;
   padding-top: 3.4rem;
 }
 .card__container h3 {
@@ -162,7 +163,79 @@ header {
   font-size: 400;
   color: #646e73;
 }
-@media (max-width: 460px) {
+.form1 p {
+  margin: 2rem 0;
+}
+.form a {
+  margin-bottom: 3rem;
+  color: #15847b;
+  font-weight: 600;
+  text-decoration: none;
+}
+.form a:hover {
+  text-decoration: underline;
+}
+.btn1 {
+  background: #eaebec;
+  width: 150px;
+  padding: 10px 10px;
+  color: #2e3c42;
+  border-radius: 4px;
+  border: none;
+  margin: 1rem 0;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.4s ease;
+}
+.btn1:hover {
+  background: #bce4f1;
+}
+.btn2 {
+  background: #15847b;
+  color: #fff;
+  width: 120px;
+  padding: 10px 10px;
+  border-radius: 4px;
+  border: none;
+  margin: 1rem 0;
+  font-weight: 600;
+  font-size: 16px;
+}
+.btn2:hover {
+  background: #00ad9f;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  background: #0e1e25;
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+footer ul {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  list-style: none;
+}
+footer ul li {
+  text-transform: capitalize;
+  color: #646e73;
+  font-weight: 600;
+  margin-left: 15px;
+  padding: 10px;
+  transition: all 0.4s ease;
+  border-radius: 4px;
+}
+footer ul li:hover {
+  color: #fff;
+  background: #646e73;
+}
+footer a {
+  display: block;
+}
+@media (max-width: 660px) {
   .card__container {
     width: 100%;
     padding: 0 2rem;
@@ -170,9 +243,7 @@ header {
   .form {
     width: 100%;
   }
-  .step {
-    overflow: hidden;
-  }
+
   .logo {
     display: block;
   }
@@ -181,5 +252,15 @@ header {
     display: block;
     font-size: 20px;
     margin: 10px 0;
+  }
+  header {
+    width: 100%;
+  }
+
+  .menu ul {
+    margin-right: 10px;
+  }
+  .menu ul li {
+    margin: 0px;
   }
 }
