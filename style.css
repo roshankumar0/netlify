@@ -162,7 +162,7 @@ header {
   font-size: 400;
   color: #646e73;
 }
-@media (max-width: 800px) {
+@media (max-width: 460px) {
   .card__container {
     width: 100%;
     padding: 0 2rem;
