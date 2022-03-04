@@ -225,63 +225,30 @@ header {
   background: #00ad9f;
 }
 footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
+  right: 0;
   background: #0e1e25;
   height: 20vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-footer ul {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  list-style: none;
-}
-footer ul li {
-  text-transform: capitalize;
-  color: #646e73;
-  font-weight: 600;
-  margin-left: 15px;
-  padding: 10px;
-  transition: all 0.4s ease;
-  border-radius: 4px;
-}
-footer ul li:hover {
-  color: #fff;
-  background: #646e73;
-}
-footer a {
-  display: block;
 }
 
-@media (min-width: 380px) and (max-width: 786px) {
+@media (max-width: 992px) {
+  .main__container {
+    width: 100%;
+  }
   .card__container {
     width: 100%;
     padding: 0 2rem;
   }
   .form {
     width: 100%;
+    padding: 0 1rem;
   }
-
-  .logo {
-    display: block;
-  }
-  .logo h2 {
-    width: 150px;
-    display: block;
-    font-size: 20px;
-    margin: 10px 0;
-  }
-  header {
+  .settings {
     width: 100%;
   }
-
-  .menu ul {
-    margin-right: 10px;
-  }
-  .menu ul li {
-    margin: 0px;
+  .btn1,
+  .btn2 {
+    width: 100%;
   }
 }
