@@ -232,7 +232,7 @@ footer {
   height: 20vh;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 562px) {
   .main__container {
     width: 100%;
   }
@@ -246,6 +246,45 @@ footer {
   }
   .settings {
     width: 100%;
+  }
+  .btn1,
+  .btn2 {
+    width: 100%;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .logo h2 {
+    width: 120px;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .menu ul li button {
+    font-size: 14px;
+  }
+  .menu ul li i {
+    font-size: 20px;
+  }
+  .menu ul li .img {
+    border-radius: 50px;
+  }
+  .menu ul li img {
+    margin: 0px;
+    height: 100%;
+    width: 40px;
+  }
+}
+@media (max-width: 620px) {
+  .main__container {
+    width: 100%;
+  }
+  .card__container {
+    width: 100%;
+    padding: 0 2rem;
   }
   .btn1,
   .btn2 {
