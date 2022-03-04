@@ -169,7 +169,7 @@ header {
   outline-color: #15847b;
   margin-bottom: 1.4rem;
   border-radius: 6px;
-  width: 94%;
+  width: 95%;
 }
 .form input::placeholder {
   font-size: 14px;
@@ -225,14 +225,23 @@ header {
   background: #00ad9f;
 }
 footer {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  margin-top: 5rem;
   background: #0e1e25;
   height: 20vh;
+  width: 100%;
+}
+.social {
+  margin-top: 30px;
+}
+footer a {
+  line-height: 40px;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #646e73;
 }
 
-@media (max-width: 562px) {
+@media (max-width: 992px) {
   .main__container {
     width: 100%;
   }
@@ -240,6 +249,7 @@ footer {
     width: 100%;
     padding: 0 2rem;
   }
+
   .form {
     width: 100%;
     padding: 0 1rem;
@@ -250,6 +260,17 @@ footer {
   .btn1,
   .btn2 {
     width: 100%;
+  }
+  nav {
+    background: #0e1e25;
+    width: 100%;
+    margin: 0 auto;
+    height: 24vh;
+  }
+
+  header {
+    width: 100%;
+    overflow: hidden;
   }
 
   .logo {
@@ -277,8 +298,11 @@ footer {
     height: 100%;
     width: 40px;
   }
+  .form input {
+    width: 91%;
+  }
 }
-@media (max-width: 620px) {
+/* @media (max-width: 620px) {
   .main__container {
     width: 100%;
   }
@@ -290,4 +314,4 @@ footer {
   .btn2 {
     width: 100%;
   }
-}
+} */
