@@ -18,8 +18,6 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- <i class="fa fa-exclamation-circle" aria-hidden="true"></i> -->
-
     <nav class="navbar">
       <header class="header">
         <div class="logo">
@@ -58,33 +56,45 @@
           </p>
         </div>
         <div class="form">
-          <label for="form">Owner </label>
-          <input type="text" placeholder="no-name-now" id="form" />
-          <label for="form1">Branch to deploy</label>
-          <input type="text" placeholder="main" id="form1" />
+          <span>Owner</span>
+         <div class="dropdown">
+          <input type="text" placeholder="no-name-now" />
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+         </div>
+          <span>Branch to deploy</span>
+          <div class="dropdown"><input type="text" placeholder="main" />
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </div>
           <h1>Basic build settings</h1>
           <p>
             If you’re using a static site generator or build tool, we’ll need
             these settings to build your site.
           </p>
           <a href="#">Learn in more in the docs</a>
-          <input type="text" placeholder="Base directory" id="form" />
-          <input type="text" placeholder="Build command" id="form" />
-          <input type="text" placeholder="Publish directory" id="form" />
-          <button class="btn1">Show advanced</button>
-          <button class="btn2">Deploy site</button>
+          <div class="settings">
+            <input type="text" placeholder="Base directory" />
+             <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+            <input type="text" placeholder="Build command" /> 
+            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+            <input type="text" placeholder="Publish directory" />
+            <i class="fa fa-exclamation-circle" aria-hidden="true"></i></div>
+            <button class="btn1">Show advanced</button>
+            <button class="btn2">Deploy site</button>
         </div>
       </div>
     </div>
-    <footer>
-      <ul>
+    
+    <!-- <footer>
+      <!-- <ul>
         <li>docs</li>
         <li>docs</li>
         <li>support</li>
         <li>news</li>
         <li>terms</li>
       </ul>
-      <a href="#">© 2022 Netlify</a>
-    </footer>
+      <a href="#">© 2022 Netlify</a> -->
+      <!-- convert to li -->
+      <!-- right semantic -->
+    </footer> -->
   </body>
 </html>

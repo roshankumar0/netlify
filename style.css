@@ -138,24 +138,44 @@ header {
   margin-bottom: 1.2rem;
   font-weight: 200;
 }
+.dropdown {
+  position: relative;
+}
+.dropdown .fa {
+  position: absolute;
+  right: 32px;
+  top: 10px;
+  font-weight: 600;
+  font-size: 18px;
+}
 .form {
   display: flex;
   flex-direction: column;
   width: 60%;
 }
+.settings .fa {
+  margin-left: 4px;
+  color: #2e3c42;
+}
+.form h1 {
+  font-size: 22px;
+  line-height: 32px;
+  color: #2e3c42;
+  font-weight: 500;
+}
 .form input {
-  padding: 10px 4px;
+  padding: 10px 0px;
   border: 1px solid #c9eeea;
-  cursor: pointer;
   outline-color: #15847b;
   margin-bottom: 1.4rem;
   border-radius: 6px;
+  width: 94%;
 }
 .form input::placeholder {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: bold;
   letter-spacing: 1px;
-  padding-left: 0.4rem;
+  padding-left: 1rem;
   color: #2e3c42;
 }
 .form label {
