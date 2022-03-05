@@ -12,16 +12,19 @@ nav {
   background: #0e1e25;
   width: 100%;
   margin: 0 auto;
-  height: 44vh;
+  height: 16.5rem;
+  padding: 20px 40px;
+  color: rgb(126, 135, 139);
 }
 
 header {
-  width: 87%;
+  max-width: 75rem;
+  height: 64px;
   margin: 0 auto;
   color: white;
   display: flex;
   justify-content: space-between;
-  padding-top: 30px;
+  align-items: center;
 }
 
 .logo {
@@ -78,28 +81,35 @@ header {
 }
 .menu ul li img2 {
   width: 30px;
+  background-color: red;
 }
 
 .menu ul li img {
-  width: 100%;
-  height: 30px;
+  height: 40px;
+  width: 40px;
+  background-color: red;
   border-radius: 50%;
 }
 .main__container {
-  position: absolute;
-  background: #fff;
-  width: 90%;
-  border-radius: 4px;
-  left: 50%;
-  top: 9rem;
-  transform: translateX(-50%);
+  max-width: 75rem;
+  padding: 24px 12px;
+  margin: 0 auto;
+  position: relative;
+  top: -10rem;
   box-shadow: 0 0 1px #fff;
+  background: #fff;
+  border-radius: 8px;
+  margin-top: 24px;
 }
+
 .card__container {
-  width: 60%;
+  padding: 2.5rem;
+
   border-radius: 4px;
   margin: 0 auto;
   padding-top: 3.4rem;
+
+  width: 42.5rem;
 }
 .card__container h3 {
   font-size: 28px;
@@ -153,6 +163,10 @@ header {
   flex-direction: column;
   width: 60%;
 }
+.form span {
+  color: #646e73;
+  font-size: 12px;
+}
 .settings .fa {
   margin-left: 4px;
   color: #2e3c42;
@@ -164,19 +178,18 @@ header {
   font-weight: 500;
 }
 .form input {
-  padding: 10px 0px;
-  border: 1px solid #c9eeea;
+  padding: 10px 14px;
   outline-color: #15847b;
   margin-bottom: 1.4rem;
   border-radius: 6px;
   width: 95%;
+  border: 2px solid #646e73;
 }
 .form input::placeholder {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
+  color: #646e73;
   letter-spacing: 1px;
-  padding-left: 1rem;
-  color: #2e3c42;
 }
 .form label {
   font-size: 14px;
@@ -233,6 +246,16 @@ footer {
 .social {
   margin-top: 30px;
 }
+.social a {
+  font-size: 1rem;
+  color: rgb(126, 135, 139);
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 1rem;
+}
+.social a:last-child {
+  font-size: 14px;
+}
 footer a {
   line-height: 40px;
   margin-left: 25px;
@@ -241,7 +264,7 @@ footer a {
   color: #646e73;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 580px) {
   .main__container {
     width: 100%;
   }
@@ -257,32 +280,16 @@ footer a {
   .settings {
     width: 100%;
   }
+
   .btn1,
   .btn2 {
     width: 100%;
-  }
-  nav {
-    background: #0e1e25;
-    width: 100%;
-    margin: 0 auto;
-    height: 24vh;
-  }
-
-  header {
-    width: 100%;
-    overflow: hidden;
   }
 
   .logo {
     display: flex;
     align-items: center;
     flex-direction: column;
-  }
-
-  .logo h2 {
-    width: 120px;
-    margin-top: 20px;
-    font-size: 14px;
   }
   .menu ul li button {
     font-size: 14px;
@@ -291,12 +298,9 @@ footer a {
     font-size: 20px;
   }
   .menu ul li .img {
-    border-radius: 50px;
-  }
-  .menu ul li img {
-    margin: 0px;
-    height: 100%;
+    height: 40px;
     width: 40px;
+    border-radius: 50px;
   }
   .form input {
     width: 91%;
