@@ -267,7 +267,7 @@ footer a {
   color: #646e73;
 }
 
-@media (max-width: 625px) {
+@media (max-width: 380px) {
   .main__container {
     margin: 5rem 0.75rem;
   }
