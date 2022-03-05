@@ -238,20 +238,23 @@ header {
   background: #00ad9f;
 }
 footer {
-  margin-top: 5rem;
   background: #0e1e25;
   height: 20vh;
   width: 100%;
 }
 .social {
-  margin-top: 30px;
+  height: 120px;
+  font-size: 1rem;
+  padding: 30px 30px;
 }
 .social a {
   font-size: 1rem;
   color: rgb(126, 135, 139);
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1rem;
+  line-height: 24px;
+  text-transform: capitalize;
 }
 .social a:last-child {
   font-size: 14px;
@@ -264,7 +267,7 @@ footer a {
   color: #646e73;
 }
 
-@media (max-width: 786px) {
+@media (max-width: 625px) {
   .main__container {
     margin: 5rem 0.75rem;
   }
@@ -274,7 +277,7 @@ footer a {
     padding: 0 2rem;
   }
   nav {
-    padding: 40px 20px;
+    padding: 12px 20px;
   }
   .menu ul li {
     margin-left: 10px;
@@ -313,16 +316,3 @@ footer a {
     width: 91%;
   }
 }
-/* @media (max-width: 620px) {
-  .main__container {
-    width: 100%;
-  }
-  .card__container {
-    width: 100%;
-    padding: 0 2rem;
-  }
-  .btn1,
-  .btn2 {
-    width: 100%;
-  }
-} */
