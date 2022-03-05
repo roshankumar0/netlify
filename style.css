@@ -23,23 +23,25 @@ header {
   margin: 0 auto;
   color: white;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo {
   display: flex;
-  align-items: center;
-  width: 300px;
 }
 .logo .img {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
 }
 .logo h2 {
   margin-left: 25px;
   font-weight: lighter;
   font-size: 22px;
+  color: #ffffff;
+  font-family: inherit;
+  cursor: pointer;
 }
 .logo h2 i {
   font-size: 18px;
@@ -58,6 +60,9 @@ header {
   padding: 6px 8px;
   border-radius: 8px;
   transition: all 0.4s ease;
+  color: gray;
+  font-size: 22px;
+  transition: all 0.4s ease;
 }
 
 .menu ul li i:hover {
@@ -75,30 +80,25 @@ header {
   cursor: pointer;
   border-radius: 8px;
 }
-.menu ul li i {
-  color: gray;
-  font-size: 22px;
-}
-.menu ul li img2 {
-  width: 30px;
-  background-color: red;
-}
-
 .menu ul li img {
-  height: 40px;
-  width: 40px;
-  background-color: red;
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
+  transition: all 0.4s ease;
+}
+.img2:hover {
+  border: 2px solid #00ad9f;
+  padding: 0.1rem;
 }
 .main__container {
   max-width: 75rem;
   padding: 24px 12px;
   margin: 0 auto;
   position: relative;
-  top: -10rem;
+  top: -11rem;
   box-shadow: 0 0 1px #fff;
   background: #fff;
-  border-radius: 8px;
+  border-radius: 6px;
   margin-top: 24px;
 }
 
@@ -264,15 +264,21 @@ footer a {
   color: #646e73;
 }
 
-@media (max-width: 580px) {
+@media (max-width: 786px) {
   .main__container {
-    width: 100%;
+    margin: 5rem 0.75rem;
   }
+
   .card__container {
     width: 100%;
     padding: 0 2rem;
   }
-
+  nav {
+    padding: 40px 20px;
+  }
+  .menu ul li {
+    margin-left: 10px;
+  }
   .form {
     width: 100%;
     padding: 0 1rem;
@@ -287,21 +293,22 @@ footer a {
   }
 
   .logo {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .logo h2 {
+    margin: 0px;
+    font-size: 14px;
   }
   .menu ul li button {
     font-size: 14px;
+    display: none;
+
+    padding: 0;
   }
-  .menu ul li i {
-    font-size: 20px;
-  }
-  .menu ul li .img {
-    height: 40px;
-    width: 40px;
-    border-radius: 50px;
-  }
+
   .form input {
     width: 91%;
   }
