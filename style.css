@@ -140,13 +140,16 @@ header {
   background-color: #00ad9f;
   margin-bottom: 0.7rem;
 }
-.site__settings h2 {
+.settings .fa {
+  margin-left: 4px;
+  margin-top: -20px;
   color: #2e3c42;
-  font-weight: 300;
 }
-.site__settings p {
-  margin-bottom: 1.2rem;
-  font-weight: 200;
+.settings div {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .dropdown {
   position: relative;
@@ -269,7 +272,7 @@ footer a {
 
 @media (max-width: 380px) {
   .main__container {
-    margin: 5rem 0.75rem;
+    margin-top: 1rem;
   }
 
   .card__container {
@@ -313,6 +316,48 @@ footer a {
   }
 
   .form input {
-    width: 91%;
+    width: 85%;
+  }
+}
+@media (max-width: 690px) {
+  .main__container {
+    margin-top: 1rem;
+  }
+
+  .card__container {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  nav {
+    padding: 12px 20px;
+  }
+  .menu ul li {
+    margin-left: 10px;
+  }
+  .form {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .settings {
+    width: 100%;
+  }
+
+  .btn1,
+  .btn2 {
+    width: 100%;
+  }
+
+  .logo {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .logo h2 {
+    margin: 0px;
+    font-size: 14px;
+  }
+  .form input {
+    width: 95%;
   }
 }
