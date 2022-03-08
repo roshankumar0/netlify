@@ -406,3 +406,11 @@ footer a {
     margin: 12px 0 8px 0;
   }
 }
+@media (min-width: 776px) and (max-width: 1020px) {
+  .main__container {
+    margin: 4rem;
+  }
+  .step span::before {
+    margin: 12px 0 8px 0;
+  }
+}
