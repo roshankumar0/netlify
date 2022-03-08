@@ -74,14 +74,15 @@ header {
 }
 .menu li button {
   background: #8c1773;
-  padding: 10px 20px;
+  padding: 8px 16px;
   color: #fff;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 500;
   border: none;
   text-transform: capitalize;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 7px;
+  width: 95px;
 }
 .menu li img {
   height: 30px;
@@ -102,7 +103,7 @@ header {
   margin: 0 auto;
   position: relative;
   bottom: 10rem;
-  box-shadow: 0 0 2px #fff;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px;
   background: #fff;
   border-radius: 6px;
   margin-top: 30px;
@@ -211,10 +212,6 @@ header {
   margin-bottom: 4px;
   font-weight: 500;
 }
-.settings .fa {
-  margin-left: 4px;
-  color: #2e3c42;
-}
 .form h1 {
   font-size: 22px;
   line-height: 32px;
@@ -315,8 +312,9 @@ footer a {
   font-weight: 600;
   color: #646e73;
 }
+/* for mobile */
 
-@media (min-width: 320px) and (max-width: 775px) {
+@media (max-width: 480px) {
   .main__container {
     margin: 5rem 1.25rem;
   }
@@ -327,6 +325,9 @@ footer a {
     width: 42.5rem;
   }
   .card__container h1 {
+    font-size: 24px;
+  }
+  .form h1 {
     font-size: 18px;
   }
   .dropdown {
@@ -406,7 +407,8 @@ footer a {
     margin: 12px 0 8px 0;
   }
 }
-@media (min-width: 776px) and (max-width: 1020px) {
+/* for tablet */
+@media (min-width: 481px) and (max-width: 1020px) {
   .main__container {
     margin: 4rem;
   }
